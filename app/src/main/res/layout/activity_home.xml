@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AndroidERestaurant.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FF9800"
+            app:popupTheme="@style/Theme.AndroidERestaurant.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_home"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:translationY="55">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="199dp"
+            android:layout_height="236dp"
+            android:rotationX="-360"
+            android:rotationY="-360"
+            android:translationX="300"
+            android:translationY="0"
+            app:srcCompat="@drawable/_8747470733a2f2f692e696d6775722e636f6d2f6f6174656d50742e706e67" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="300dp"
+            android:layout_height="145dp"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:inputType="textPersonName"
+            android:text="Bienvenue Chez "
+            android:textColor="#FF9800"
+            android:textSize="30" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="DroidRestaurant"
+            android:textColor="#000000"
+            android:textSize="50"
+            android:translationY="75" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleX="1.5"
+        android:textColor="#000000"
+        android:translationX="135"
+        android:translationY="350" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleX="1.5"
+        android:textColor="#000000"
+        android:translationX="135"
+        android:translationY="465" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleX="1.5"
+        android:textColor="#000000"
+        android:translationX="135"
+        android:translationY="565" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrée"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="50"
+        android:textStyle="bold"
+        android:translationX="160"
+        android:translationY="300"
+        app:backgroundTint="#FFFFFF"
+        android:button.setOnClickListener={
+    textView.text = "Androidly Buttons"
+    }
+
+    />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Déserts"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="50"
+        android:textStyle="bold"
+        android:translationX="135"
+        android:translationY="515"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plat"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="50"
+        android:textStyle="bold"
+        android:translationX="175"
+        android:translationY="415"
+        app:backgroundTint="#FFFFFF" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
